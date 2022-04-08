@@ -1,0 +1,102 @@
+body{
+    background-color: hsl(210, 36%, 96%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 1000px;
+
+}
+.aside{
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transform: translate(-100%);
+    position: fixed;
+    transition: 500ms;
+    
+    
+}
+
+.aside.show-sidebar{
+    transform: translate(0);
+
+}
+
+header{
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    display: block;
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: rgb(112, 111, 111);
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+a:hover{
+    background-color: aqua
+}
+ul{
+    padding: 30px 0px;
+}
+
+.bar{
+    width: 30px;
+    height: 5.5px;
+    background-color: red;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.-f{
+    margin-bottom: 3px;
+    transform: rotate(50deg) translateX(4px) translateY(5px)
+    
+}
+.-s{
+    transform: rotate(-49deg) translateY(-3px) translateX(0px);
+}
+
+.icons div{
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 50%;
+
+    
+
+}
+.icons{
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 30px;
+
+}
+
+.menu-bar{
+    width: 40px;
+    height: 7px;
+    background-color: blue;
+    margin-bottom: 3px;
+}
+.menu{
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+
+}
